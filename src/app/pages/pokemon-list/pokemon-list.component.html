@@ -1,0 +1,14 @@
+<div class="body">
+        <app-navbar 
+            (typeSelect)='pokemonType($event)'
+            (searchValue)='SearchPokemon($event)'>
+        </app-navbar>
+    <div class="box1">
+        <div *ngFor="let item of arrayShared | filter:filterArray">        
+            <app-cards *ngIf="item.name" [name]=item.name ></app-cards>
+            <app-cards *ngIf="item.pokemon" [name]=item.pokemon.name ></app-cards>
+        </div>
+    </div>
+</div>
+
+<ngx-spinner bd Color="rgba(0,0,0,0.71)" size="medium" color="#ffffff" type = "ball-rotate" [fullScreen]="true"><p style="color: white" > Cargando... </p></ngx-spinner>

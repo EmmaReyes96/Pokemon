@@ -1,0 +1,31 @@
+.navbar{
+    background: rgb(167,167,167);
+    background: linear-gradient(0deg, rgba(167,167,167,1) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: 1px 4px 8px -1px;
+}
+
+.tipo{
+    margin-top: 2px;
+    font-size: smaller;
+    margin-bottom: -10px;
+}
+
+.select{
+    width: 164px;
+    margin-left: 10px;
+}
+.input{
+    height: 44px;
+    width: 198px;
+    margin-top: 2px;
+}
+
+@media (min-width: 750px) {
+    .menu {
+        display: flex;  
+    }
+    .tipo{
+        margin-left: 20px;
+    }
+    
+}

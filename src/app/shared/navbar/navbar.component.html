@@ -1,0 +1,23 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="../../../assets/Pokemon.svg" alt="" style="height: 3rem;">
+
+      <div class="menu">
+
+        <input  class="form-control input" name="search" [(ngModel)]='search' (keydown)='searchPokemon(search)' placeholder="pokemon" aria-label="Search">
+
+        <mat-form-field appearance="fill" class="tipo" >
+          <mat-label>Type</mat-label>
+          <mat-select class="select" [(ngModel)]='select' (selectionChange)='selectedPokemon(select)'>
+              <mat-option style="margin-top: 55px;">All</mat-option>
+              <mat-option *ngFor="let item of modelType" [value]="item.name">
+                <mat-icon><img style="height: 23px; margin-top: -10px; margin-right: -10px;" src={{item.url}} alt=""></mat-icon>
+                {{item.name}}
+              </mat-option>
+          </mat-select>
+        </mat-form-field>  
+         
+      </div>
+
+    </div>
+  </nav>

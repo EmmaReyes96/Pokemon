@@ -1,0 +1,12 @@
+.body{
+    background: rgb(9,9,121);
+    background: linear-gradient(0deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    min-height: 100vh;
+}
+
+.box1{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}

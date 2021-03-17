@@ -1,0 +1,29 @@
+<div style="text-align: center;">
+    <h1 style="text-transform: uppercase" mat-dialog-title>{{data.pokemon.name}}</h1>
+    <hr>
+    <div>
+        <img class="img" src={{data.pokemon.sprites.front_default}} alt="">
+        <img class="img" src={{data.pokemon.sprites.back_default}} alt="">
+    </div>
+    <div>
+        <img class="img" src={{data.pokemon.sprites.front_shiny}} alt="">
+        <img class="img" src={{data.pokemon.sprites.back_shiny}} alt="">
+    </div>
+    <hr>    
+    <h3>Type</h3>    
+    <div style="display: inline-flex;">
+        <span *ngFor="let item of data.pokemon.types" style="margin: 10px;">
+            <img  class="type" src='../../../assets/{{item.type.name}}.svg' alt="">
+            <p>{{item.type.name}}</p>
+        </span>
+    </div>    
+    <hr>
+    <h3>Abilities</h3>
+    <div style="display: inline-flex;">
+        <p style="margin: 10px;" *ngFor="let item of data.pokemon.abilities">{{item.ability.name}}</p>
+    </div>
+    <hr>
+    <div mat-dialog-actions style="justify-content: center;" >
+        <button mat-button color='primary' mat-dialog-close>Close</button>
+    </div>
+</div>

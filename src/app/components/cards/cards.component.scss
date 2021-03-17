@@ -1,0 +1,29 @@
+.card-body{
+    text-align-last: center;
+}
+.card{
+    width: 10rem; 
+    height: 14rem;
+    margin: 6px;
+    border-radius: 15px;
+    box-shadow: 1px 4px 8px -1px;
+}
+
+.type{
+    height: 25px; 
+    margin-top: 115px;
+}
+
+.img{
+    position: absolute;
+    display: grid;
+    margin-left: 12px;
+}
+
+.img:hover{
+    width: 12rem;
+    height: auto;
+    image-rendering: pixelated;
+    margin-left: -34px;
+    margin-top: -40px;    
+}

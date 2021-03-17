@@ -1,0 +1,7 @@
+<div class="card" *ngIf="pokemon">
+    <div class="card-body" type='button'>
+      <h5 class="card-title">{{name}}</h5>
+      <img type=button (click)="openDialog(pokemon)" class="img" src="{{img}}" alt="">
+      <img *ngFor="let item of types" class="type" src='../../../assets/{{item.type.name}}.svg' alt="">
+    </div>
+</div>
